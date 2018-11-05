@@ -1,0 +1,23 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension for yotube ads",
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "tabs",
+    "*://*.youtube.com/*",
+    "*://*.interia.pl/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Adblock for Youtube",
+    "default_icon": "images/no_ads.png",
+    "icons": "images/no_ads.png"
+  },
+  "manifest_version": 2
+}
